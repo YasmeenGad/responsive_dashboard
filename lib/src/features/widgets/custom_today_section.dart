@@ -24,8 +24,12 @@ class CustomTodaySection extends StatelessWidget {
           trailing: "-185.750",
           image: 'assets/images/housing.svg'),
     ];
-    return SliverList.builder(itemBuilder: (context, index) {
-      return CustomTodayRow(customTodayModel: items[index],);
-    }, itemCount: items.length);
+    return SliverList.builder(
+        itemBuilder: (context, index) {
+          return CustomTodayRow(
+            customTodayModel: items[index],
+          );
+        },
+        itemCount: items.length);
   }
 }
