@@ -8,9 +8,13 @@ class CustomExpensesHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: ListTile(
-        title: Text(
-          "Expenses",
-          style: AppTextStyle.styleSemiBold40(context),
+        title: FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: Alignment.centerLeft,
+          child: Text(
+            "Expenses",
+            style: AppTextStyle.styleSemiBold40(context),
+          ),
         ),
         subtitle: Text(
           "01 - 25 March, 2020",
