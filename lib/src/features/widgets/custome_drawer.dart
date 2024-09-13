@@ -55,10 +55,14 @@ class _CustomeDrawerState extends State<CustomeDrawer> {
                       child: FittedBox(
                         fit: BoxFit.scaleDown,
                         alignment: Alignment.centerLeft,
-                        child: Text(
-                          data[index],
-                          style: AppTextStyle.styleSemiBold25(context).copyWith(
-                            color: textColor,
+                        child: MouseRegion(
+                          cursor: SystemMouseCursors.click,
+                          child: Text(
+                            data[index],
+                            style:
+                                AppTextStyle.styleSemiBold25(context).copyWith(
+                              color: textColor,
+                            ),
                           ),
                         ),
                       ),
