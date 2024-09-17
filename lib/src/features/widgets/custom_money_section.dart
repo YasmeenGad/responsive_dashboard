@@ -10,63 +10,63 @@ class CustomMoneySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
-                    slivers: [
-                      SliverToBoxAdapter(
-                        child: FittedBox(
-                          fit: BoxFit.scaleDown,
-                          alignment: Alignment.centerLeft,
-                          child: Text(
-                            "Where your money go?",
-                            style: AppTextStyle.styleSemiBold25(context)
-                                .copyWith(color: AppColor.whiteBlueColor),
-                          ),
-                        ),
-                      ),
-                      SliverToBoxAdapter(
-                        child: SizedBox(height: 16),
-                      ),
-                      SliverToBoxAdapter(
-                        child: ListTilePercentIndicatorWidget(
-                          title: "Food and Drinks",
-                          trailing: "872.400",
-                          value: 0.25,
-                        ),
-                      ),
-                      SliverToBoxAdapter(
-                        child: ListTilePercentIndicatorWidget(
-                          title: "Shopping",
-                          trailing: "1.378.200",
-                          value: 0.55,
-                        ),
-                      ),
-                      SliverToBoxAdapter(
-                        child: ListTilePercentIndicatorWidget(
-                          title: "Housing",
-                          trailing: "928.500",
-                          value: 0.45,
-                        ),
-                      ),
-                      SliverToBoxAdapter(
-                        child: ListTilePercentIndicatorWidget(
-                          title: "Transportation",
-                          trailing: "420.700",
-                          value: 0.20,
-                        ),
-                      ),
-                      SliverToBoxAdapter(
-                        child: ListTilePercentIndicatorWidget(
-                          title: "Vehicle",
-                          trailing: "520.000",
-                          value: 0.45,
-                        ),
-                      ),
-                      SliverToBoxAdapter(
-                        child: SizedBox(height: 16),
-                      ),
-                      SliverToBoxAdapter(
-                        child: CustomImageSection(),
-                      ),
-                    ],
-                  );
+      slivers: [
+        SliverToBoxAdapter(
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              "Where your money go?",
+              style: AppTextStyle.styleSemiBold25(context)
+                  .copyWith(color: AppColor.whiteBlueColor),
+            ),
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: SizedBox(height: 16),
+        ),
+        SliverToBoxAdapter(
+          child: ListTilePercentIndicatorWidget(
+            title: "Food and Drinks",
+            trailing: "872.400",
+            value: 0.25,
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: ListTilePercentIndicatorWidget(
+            title: "Shopping",
+            trailing: "1.378.200",
+            value: 0.55,
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: ListTilePercentIndicatorWidget(
+            title: "Housing",
+            trailing: "928.500",
+            value: 0.45,
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: ListTilePercentIndicatorWidget(
+            title: "Transportation",
+            trailing: "420.700",
+            value: 0.20,
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: ListTilePercentIndicatorWidget(
+            title: "Vehicle",
+            trailing: "520.000",
+            value: 0.45,
+          ),
+        ),
+        SliverToBoxAdapter(
+          child: SizedBox(height: 16),
+        ),
+        SliverToBoxAdapter(
+          child: CustomImageSection(),
+        ),
+      ],
+    );
   }
 }

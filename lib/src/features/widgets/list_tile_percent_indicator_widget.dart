@@ -10,7 +10,10 @@ class ListTilePercentIndicatorWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text(title,style: AppTextStyle.styleMedium13(context),),
+      title: FittedBox(
+        alignment: Alignment.centerLeft,
+        fit: BoxFit.scaleDown,
+        child: Text(title,style: AppTextStyle.styleMedium13(context),)),
       subtitle: LinearProgressIndicator(
         value: value,
         backgroundColor: AppColor.whiteColor,
@@ -18,7 +21,10 @@ class ListTilePercentIndicatorWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         minHeight: 8,
       ),
-      trailing: Text(trailing,style: AppTextStyle.styleRegular13(context),),
+      trailing: FittedBox(
+        alignment: Alignment.centerLeft,
+        fit: BoxFit.scaleDown,
+        child: Text(trailing,style: AppTextStyle.styleRegular13(context),)),
     );
   }
 }

@@ -17,9 +17,13 @@ class CustomTodayRow extends StatelessWidget {
         customTodayModel.title,
         style: AppTextStyle.styleMedium16(context),
       ),
-      subtitle: Text(
-        customTodayModel.subtitle,
-        style: AppTextStyle.styleRegular14(context),
+      subtitle: FittedBox(
+        alignment: Alignment.centerLeft,
+        fit: BoxFit.scaleDown,
+        child: Text(
+          customTodayModel.subtitle,
+          style: AppTextStyle.styleRegular14(context),
+        ),
       ),
       trailing: Text(
         customTodayModel.trailing,
