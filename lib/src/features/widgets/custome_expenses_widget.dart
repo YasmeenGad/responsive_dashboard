@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/src/core/constants/colors.dart';
-import 'package:responsive_dashboard/src/core/utils/app_styles.dart';
-import 'package:responsive_dashboard/src/features/widgets/custom_image_section.dart';
+import 'package:responsive_dashboard/src/features/widgets/custom_money_section.dart';
 import 'package:responsive_dashboard/src/features/widgets/custome_expenses_sections.dart';
-import 'package:responsive_dashboard/src/features/widgets/list_tile_percent_indicator_widget.dart';
 
 class CustomeExpensesWidget extends StatelessWidget {
   const CustomeExpensesWidget({super.key});
