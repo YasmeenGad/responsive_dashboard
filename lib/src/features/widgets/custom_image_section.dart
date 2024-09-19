@@ -18,16 +18,13 @@ class CustomImageSection extends StatelessWidget {
               height: 292,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(
-                      12)), // Set the desired height for the image container
-              child: AspectRatio(
-                aspectRatio: 16 / 9, // Aspect ratio (width / height)
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child: SvgPicture.asset(
-                    "assets/images/BoxTips.svg",
-                    fit: BoxFit
-                        .cover, // Maintain aspect ratio and cover the available space
-                  ),
+                      12)), 
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(12),
+                child: SvgPicture.asset(
+                  "assets/images/BoxTips.svg",
+                  fit: BoxFit
+                      .cover, 
                 ),
               ),
             ),
@@ -36,7 +33,7 @@ class CustomImageSection extends StatelessWidget {
             child: Align(
               alignment: Alignment.center,
               child: Padding(
-                padding: const EdgeInsets.all(30),
+                padding: const EdgeInsets.symmetric(horizontal: 30,),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -49,10 +46,14 @@ class CustomImageSection extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 12),
-                    Text(
-                      "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
-                      style: AppTextStyle.styleRegular12(context),
-                      textAlign: TextAlign.center,
+                    Container(
+                      width: 120,
+                      height: 70,
+                      child: Text(
+                        "eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+                        style: AppTextStyle.styleRegular12(context),
+                        textAlign: TextAlign.center,
+                      ),
                     ),
                   ],
                 ),
