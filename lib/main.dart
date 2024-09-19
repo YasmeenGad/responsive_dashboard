@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/src/core/routes/app_routes.dart';
 
 void main(List<String> args) {
-  runApp(DevicePreview(enabled: true, builder: (context) => ResponsiveDashBoard()));
+  runApp(DevicePreview(enabled: false, builder: (context) => ResponsiveDashBoard()));
 }
 
 class ResponsiveDashBoard extends StatelessWidget {
