@@ -13,9 +13,13 @@ class CustomTodayRow extends StatelessWidget {
       leading: SvgPicture.asset(
         customTodayModel.image,
       ),
-      title: Text(
-        customTodayModel.title,
-        style: AppTextStyle.styleMedium16(context),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: Alignment.centerLeft,
+        child: Text(
+          customTodayModel.title,
+          style: AppTextStyle.styleMedium16(context),
+        ),
       ),
       subtitle: FittedBox(
         alignment: Alignment.centerLeft,

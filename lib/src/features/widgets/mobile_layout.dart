@@ -7,18 +7,13 @@ class MobileLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-        child: Padding(
-      padding: const EdgeInsets.only(top: 16, right: 16, bottom: 16),
-      child: Container(
-        decoration: BoxDecoration(
-          color: AppColor.whiteColor,
-          borderRadius: BorderRadius.circular(30),
-        ),
-        child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 50),
-            child: CustomExpensesScrollTabletLayout()),
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColor.whiteColor,
       ),
-    ));
+      child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 50),
+          child: CustomExpensesScrollTabletLayout()),
+    );
   }
 }

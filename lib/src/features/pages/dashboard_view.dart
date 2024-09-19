@@ -28,10 +28,10 @@ class _DashboardViewState extends State<DashboardView> {
                     keyScaffoldState.currentState?.openDrawer();
                     setState(() {});
                   },
-                  icon: Icon(Icons.menu, color: AppColor.whiteColor,)),
-                  elevation: 0,
-                  backgroundColor: Colors.transparent,
-                  
+                  icon: Icon(Icons.menu)),
+              elevation: 0,
+              backgroundColor: AppColor.whiteColor,
+              shadowColor: Colors.transparent,
             )
           : null,
       drawer: MediaQuery.sizeOf(context).width < SizeConfig.tablet
