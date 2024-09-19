@@ -9,7 +9,7 @@ class TabletLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.primaryColor,
+      backgroundColor: Colors.transparent,
       body: Row(
         children: [
           Expanded(
