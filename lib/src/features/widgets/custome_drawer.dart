@@ -24,7 +24,7 @@ class _CustomeDrawerState extends State<CustomeDrawer> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 50, left: 50, right: 50),
+      padding: const EdgeInsets.only(top: 50, left: 20, right: 20),
       child: Container(
         color: Colors.transparent,
         child: CustomScrollView(
