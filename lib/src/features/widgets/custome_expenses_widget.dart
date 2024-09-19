@@ -27,20 +27,7 @@ class CustomeExpensesWidget extends StatelessWidget {
             ),
             Expanded(
               flex: 1,
-              child: Container(
-                decoration: BoxDecoration(
-                  color: Color(0xFFF9FAFC),
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(30),
-                    bottomRight: Radius.circular(30),
-                  ),
-                ),
-                child: Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 30, horizontal: 16),
-                  child: CustomMoneySection(),
-                ),
-              ),
+              child: CustomMoneySection(),
             ),
           ],
         ),
